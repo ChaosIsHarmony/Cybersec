@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.177.131/sitemap
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2023/06/16 04:24:00 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 278]
+/.htaccess            (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.ssh                 (Status: 301) [Size: 321] [--> http://10.10.177.131/sitemap/.ssh/]
+/css                  (Status: 301) [Size: 320] [--> http://10.10.177.131/sitemap/css/] 
+/fonts                (Status: 301) [Size: 322] [--> http://10.10.177.131/sitemap/fonts/]
+/images               (Status: 301) [Size: 323] [--> http://10.10.177.131/sitemap/images/]
+/index.html           (Status: 200) [Size: 21080]                                         
+/js                   (Status: 301) [Size: 319] [--> http://10.10.177.131/sitemap/js/]    
+===============================================================
+2023/06/16 04:25:48 Finished
+===============================================================
