@@ -1,0 +1,17 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2023-06-20 01:52 EDT
+Nmap scan report for 10.10.221.33
+Host is up (0.28s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+|_http-title: Welcome to FUEL CMS
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.10 - 3.13 (96%), Linux 5.4 (95%), ASUS RT-N56U WAP (Linux 3.4) (95%), Linux 3.16 (95%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (93%), Linux 3.10 (93%), Linux 3.12 (93%), Linux 3.18 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 5 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 27.48 seconds
