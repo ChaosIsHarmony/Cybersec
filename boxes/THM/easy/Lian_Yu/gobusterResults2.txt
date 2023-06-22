@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.5
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.136.182/island
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.5
+[+] Timeout:                 10s
+===============================================================
+2023/06/21 23:28:25 Starting gobuster in directory enumeration mode
+===============================================================
+[2K/2100                 (Status: 301) [Size: 241] [--> http://10.10.136.182/island/2100/]
+
+[!] Keyboard interrupt detected, terminating.
+
+===============================================================
+2023/06/22 00:31:31 Finished
+===============================================================
