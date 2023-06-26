@@ -1,0 +1,37 @@
+===============================================================
+Gobuster v3.5
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.225.97
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.5
+[+] Extensions:              html,php,txt
+[+] Timeout:                 10s
+===============================================================
+2023/06/25 21:07:08 Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 277]
+[2K/.php                 (Status: 403) [Size: 277]
+[2K/.hta.html            (Status: 403) [Size: 277]
+[2K/.hta                 (Status: 403) [Size: 277]
+[2K/.hta.txt             (Status: 403) [Size: 277]
+[2K/.hta.php             (Status: 403) [Size: 277]
+[2K/.htaccess.html       (Status: 403) [Size: 277]
+[2K/.htaccess            (Status: 403) [Size: 277]
+[2K/.htaccess.php        (Status: 403) [Size: 277]
+[2K/.htaccess.txt        (Status: 403) [Size: 277]
+[2K/.htpasswd            (Status: 403) [Size: 277]
+[2K/.htpasswd.txt        (Status: 403) [Size: 277]
+[2K/.htpasswd.html       (Status: 403) [Size: 277]
+[2K/.htpasswd.php        (Status: 403) [Size: 277]
+[2K/assets               (Status: 301) [Size: 313] [--> http://10.10.225.97/assets/]
+[2K/index.html           (Status: 200) [Size: 7853]
+[2K/index.html           (Status: 200) [Size: 7853]
+[2K/server-status        (Status: 403) [Size: 277]
+
+===============================================================
+2023/06/25 21:16:40 Finished
+===============================================================
