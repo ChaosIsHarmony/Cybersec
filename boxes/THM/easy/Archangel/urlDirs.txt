@@ -1,0 +1,7 @@
+/index.html
+/pages/full-width.html
+/pages/gallery.html
+/pages/sidebar-left.html
+/pages/sidebar-right.html
+/pages/basic-grid.html
+/pages/font-icons.html

@@ -1,0 +1,6 @@
+pass
+pwd
+user
+usr
+thm
+flag
