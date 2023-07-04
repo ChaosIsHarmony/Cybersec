@@ -1,0 +1,110 @@
+===============================================================
+Gobuster v3.5
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.33.72:8080/oscommerce-2.3.4/catalog/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.5
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+2023/07/03 02:35:13 Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 1044]
+[2K/.hta                 (Status: 403) [Size: 1044]
+[2K/.hta.php             (Status: 403) [Size: 1044]
+[2K/.hta.html            (Status: 403) [Size: 1044]
+[2K/.hta.txt             (Status: 403) [Size: 1044]
+[2K/.htaccess            (Status: 403) [Size: 1044]
+[2K/.htaccess.php        (Status: 403) [Size: 1044]
+[2K/.htaccess.html       (Status: 403) [Size: 1044]
+[2K/.htaccess.txt        (Status: 403) [Size: 1044]
+[2K/.htpasswd.php        (Status: 403) [Size: 1044]
+[2K/.htpasswd            (Status: 403) [Size: 1044]
+[2K/.htpasswd.html       (Status: 403) [Size: 1044]
+[2K/.htpasswd.txt        (Status: 403) [Size: 1044]
+[2K/account.php          (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/login.php?osCsid=giisnn26hoo42phehk2p7ne477]
+[2K/account_edit.php     (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/login.php?osCsid=2cdc5pnc82en4qnh0mfunp2c05]
+[2K/account_history.php  (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/login.php?osCsid=bjdb48ik2bh74pijo0vfteos43]
+[2K/address_book.php     (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/login.php?osCsid=jen7p4jbn8s65p9ph7b5f11g83]
+[2K/Admin                (Status: 301) [Size: 367] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/Admin/]
+[2K/admin                (Status: 301) [Size: 367] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/admin/]
+[2K/ADMIN                (Status: 301) [Size: 367] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/ADMIN/]
+[2K/advanced_search.php  (Status: 200) [Size: 18820]
+[2K/aux.php              (Status: 403) [Size: 1044]
+[2K/aux.txt              (Status: 403) [Size: 1044]
+[2K/aux.html             (Status: 403) [Size: 1044]
+[2K/aux                  (Status: 403) [Size: 1044]
+[2K/com1                 (Status: 403) [Size: 1044]
+[2K/com1.txt             (Status: 403) [Size: 1044]
+[2K/com1.html            (Status: 403) [Size: 1044]
+[2K/com2.html            (Status: 403) [Size: 1044]
+[2K/com2                 (Status: 403) [Size: 1044]
+[2K/com2.php             (Status: 403) [Size: 1044]
+[2K/com2.txt             (Status: 403) [Size: 1044]
+[2K/com3.php             (Status: 403) [Size: 1044]
+[2K/com3                 (Status: 403) [Size: 1044]
+[2K/com3.html            (Status: 403) [Size: 1044]
+[2K/com3.txt             (Status: 403) [Size: 1044]
+[2K/com1.php             (Status: 403) [Size: 1044]
+[2K/con                  (Status: 403) [Size: 1044]
+[2K/con.php              (Status: 403) [Size: 1044]
+[2K/con.txt              (Status: 403) [Size: 1044]
+[2K/con.html             (Status: 403) [Size: 1044]
+[2K/conditions.php       (Status: 200) [Size: 11425]
+[2K/contact_us.php       (Status: 200) [Size: 12012]
+[2K/cookie_usage.php     (Status: 200) [Size: 12750]
+[2K/create_account.php   (Status: 200) [Size: 29219]
+[2K/Download             (Status: 401) [Size: 1319]
+[2K/download             (Status: 401) [Size: 1319]
+[2K/download.php         (Status: 200) [Size: 0]
+[2K/Download.php         (Status: 200) [Size: 0]
+[2K/ext                  (Status: 301) [Size: 365] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/ext/]
+[2K/images               (Status: 301) [Size: 368] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/images/]
+[2K/Images               (Status: 301) [Size: 368] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/Images/]
+[2K/includes             (Status: 301) [Size: 370] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/includes/]
+[2K/index.php            (Status: 200) [Size: 15538]
+[2K/index.php            (Status: 200) [Size: 15518]
+[2K/Index.php            (Status: 200) [Size: 15508]
+[2K/install              (Status: 301) [Size: 369] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/install/]
+[2K/login.php            (Status: 200) [Size: 13438]
+[2K/Login.php            (Status: 200) [Size: 13305]
+[2K/lpt1                 (Status: 403) [Size: 1044]
+[2K/lpt1.txt             (Status: 403) [Size: 1044]
+[2K/lpt1.html            (Status: 403) [Size: 1044]
+[2K/lpt2                 (Status: 403) [Size: 1044]
+[2K/lpt1.php             (Status: 403) [Size: 1044]
+[2K/lpt2.php             (Status: 403) [Size: 1044]
+[2K/lpt2.html            (Status: 403) [Size: 1044]
+[2K/lpt2.txt             (Status: 403) [Size: 1044]
+[2K/logoff.php           (Status: 200) [Size: 11453]
+[2K/nul                  (Status: 403) [Size: 1044]
+[2K/nul.php              (Status: 403) [Size: 1044]
+[2K/nul.html             (Status: 403) [Size: 1044]
+[2K/nul.txt              (Status: 403) [Size: 1044]
+[2K/opensearch.php       (Status: 200) [Size: 0]
+[2K/popup_image.php      (Status: 200) [Size: 632]
+[2K/privacy.php          (Status: 200) [Size: 11340]
+[2K/Privacy.php          (Status: 200) [Size: 11393]
+[2K/prn                  (Status: 403) [Size: 1044]
+[2K/prn.php              (Status: 403) [Size: 1044]
+[2K/prn.txt              (Status: 403) [Size: 1044]
+[2K/prn.html             (Status: 403) [Size: 1044]
+[2K/product_reviews.php  (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/reviews.php?osCsid=mopmph87534491mf6e687khe80]
+[2K/product_info.php     (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/index.php?osCsid=v2kq812c37pg0cm1ibm5cinpb0]
+[2K/products_new.php     (Status: 200) [Size: 22522]
+[2K/pub                  (Status: 301) [Size: 365] [--> http://10.10.33.72:8080/oscommerce-2.3.4/catalog/pub/]
+[2K/redirect.php         (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/index.php?osCsid=3rivm2h00jifki5u28lfrbse56]
+[2K/reviews.php          (Status: 200) [Size: 12187]
+[2K/shipping.php         (Status: 200) [Size: 11402]
+[2K/shopping_cart.php    (Status: 200) [Size: 11430]
+[2K/specials.php         (Status: 200) [Size: 13449]
+[2K/ssl_check.php        (Status: 200) [Size: 12955]
+[2K/tell_a_friend.php    (Status: 302) [Size: 0] [--> http://localhost:8080/oscommerce-2.3.4/catalog/login.php?osCsid=1e71fhi025m28d4caurhtdrp83]
+
+===============================================================
+2023/07/03 02:46:12 Finished
+===============================================================
