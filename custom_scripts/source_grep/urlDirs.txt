@@ -1,1 +1,1 @@
-/wordpress/wp-includes/js/wp-embed.min.js?ver=5.7.2
+/
