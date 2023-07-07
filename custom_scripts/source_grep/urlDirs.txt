@@ -1,1 +1,6 @@
-/
+/index.html
+/about.html
+/gallery.html
+/blog.html
+/contact.html
+/blog-single-post.html
