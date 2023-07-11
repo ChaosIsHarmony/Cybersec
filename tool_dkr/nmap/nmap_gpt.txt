@@ -1,0 +1,169 @@
+You are a skilled pedagogue who could teach computer science to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of nmap with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Certainly! Here's a cheat sheet or synopsis of nmap with examples for the
+20 most commonly used flags or switches:
+
+1. Example:
+nmap
+192.168.0.1
+
+
+ - Explanation: Performs a basic scan on the IP address
+192.168.0.1
+ using default options.
+
+2. Example:
+nmap -p
+80,443
+192.168.0.1
+
+
+ - Explanation: Scans only ports
+80 and
+443 on the IP address
+192.168.0.1.
+
+3. Example:
+nmap -A
+192.168.0.1
+
+
+ - Explanation: Enables OS detection, version detection, script scanning, and traceroute for the IP address
+192.168.0.1.
+
+4. Example:
+nmap -sS
+192.168.0.1
+
+
+ - Explanation: Performs a TCP SYN scan on the IP address
+192.168.0.1.
+
+5. Example:
+nmap -sU
+192.168.0.1
+
+
+ - Explanation: Performs a UDP scan on the IP address
+192.168.0.1.
+
+6. Example:
+nmap -O
+192.168.0.1
+
+
+ - Explanation: Attempts to identify the operating system of the IP address
+192.168.0.1.
+
+7. Example:
+nmap -v
+192.168.0.1
+
+
+ - Explanation: Enables verbose output for the scan of the IP address
+192.168.0.1.
+
+8. Example:
+nmap -F
+192.168.0.1
+
+
+ - Explanation: Scans only the most common
+100 ports on the IP address
+192.168.0.1.
+
+9. Example:
+nmap --top-ports
+10
+192.168.0.1
+
+
+ - Explanation: Scans the top
+10 most common ports on the IP address
+192.168.0.1.
+
+10. Example:
+nmap -T4
+192.168.0.1
+
+
+ - Explanation: Sets the timing template to "Aggressive" for the scan of the IP address
+192.168.0.1.
+
+11. Example:
+nmap -sV
+192.168.0.1
+
+
+ - Explanation: Enables version detection for the IP address
+192.168.0.1.
+
+12. Example:
+nmap -oN output.txt
+192.168.0.1
+
+
+ - Explanation: Saves the scan results to the file
+output.txt
+ for the IP address
+192.168.0.1.
+
+13. Example:
+nmap -p-
+192.168.0.1
+
+
+ - Explanation: Scans all
+65535 ports on the IP address
+192.168.0.1.
+
+14. Example:
+nmap --script=smb*
+192.168.0.1
+
+
+ - Explanation: Executes NSE (Nmap Scripting Engine) scripts starting with "smb" against the IP address
+192.168.0.1.
+
+15. Example:
+nmap -Pn
+192.168.0.1
+
+
+ - Explanation: Treats the IP address
+192.168.0.1
+ as online, skipping host discovery.
+
+16. Example:
+nmap -D RND:5
+192.168.0.1
+
+
+ - Explanation: Spoofs the source IP addresses by using decoy IPs for the scan of the IP address
+192.168.0.1.
+
+17. Example:
+nmap -6
+192.168.0.1
+
+
+ - Explanation: Performs an IPv6 scan on the IP address
+192.168.0.1.
+
+18. Example:
+nmap -sV -p
+22 --script ssh-auth-methods
+192.168.0.1
+
+
+ - Explanation: Scans port
+22 and executes the "ssh-auth-methods" NSE script for the IP address
+192.168.0.1
+ to detect SSH authentication methods.
+
+19. Example:
+nmap -v -sS --traceroute
+192.168.0.1
+
+
+ - Explanation: Performs aSome error has occurred. Error: net/http: request canceled (Client.Timeout or context cancellation while reading body)

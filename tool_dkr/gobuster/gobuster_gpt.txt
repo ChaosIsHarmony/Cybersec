@@ -1,0 +1,88 @@
+You are a skilled pedagogue who could teach computer science to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of gobuster with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Sure! Here's a cheat sheet or synopsis of
+gobuster
+ with examples for the
+20 most commonly used flags or switches:
+
+1. Example:
+gobuster dir -u http://example.com -w wordlist.txt
+
+
+ - -u: Specifies the target URL to scan.
+
+ - -w: Specifies the wordlist file containing the paths to be tested.
+
+2. Example:
+gobuster dns -d example.com -w subdomains.txt
+
+
+ - -d: Specifies the target domain for DNS subdomain enumeration.
+
+ - -w: Specifies the wordlist file containing the subdomains to be tested.
+
+3. Example:
+gobuster vhost -u http://example.com -w subdomains.txt
+
+
+ - -u: Specifies the target URL to scan.
+
+ - -w: Specifies the wordlist file containing the virtual hostnames to be tested.
+
+4. Example:
+gobuster url -u http://example.com -w custom-wordlist.txt -x php,txt
+
+
+ - -u: Specifies the target URL to scan.
+
+ - -w: Specifies a custom wordlist file.
+
+ - -x: Specifies file extensions to be tested.
+
+5. Example:
+gobuster dir -u http://example.com -w wordlist.txt -t
+10
+
+
+ - -t: Specifies the number of concurrent threads to use.
+
+6. Example:
+gobuster dir -u http://example.com -w wordlist.txt -e
+
+
+ - -e: URL-encode the requests.
+
+7. Example:
+gobuster dir -u http://example.com -w wordlist.txt -r
+
+
+ - -r: Follow redirects.
+
+8. Example:
+gobuster dir -u http://example.com -w wordlist.txt -k
+
+
+ - -k: Skip SSL certificate verification.
+
+9. Example:
+gobuster dir -u http://example.com -w wordlist.txt -s
+200,204,301
+
+
+ - -s: Specifies the expected HTTP status codes to be treated as valid.
+
+10. Example:
+gobuster dir -u http://example.com -w wordlist.txt -x php --wildcard
+
+
+ -
+--wildcard: Force continued operation when wildcard responses are detected.
+
+11. Example:
+gobuster dir -u http://example.com -w wordlist.txt -f
+
+
+ - -f: Append a forward-slash to each directory request.
+
+12. Example:
+gobuster dir -u http://example.comSome error has occurred. Error: stream error: stream ID 15; INTERNAL_ERROR

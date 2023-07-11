@@ -1,0 +1,128 @@
+You are a skilled pedagogue who could teach computer science to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of binwalk with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Certainly! Here's a simplified cheat sheet for Binwalk with examples for the
+20 most commonly used flags or switches:
+
+1. Example:
+binwalk file.bin
+
+
+ - Explanation: Performs a basic scan of the file "file.bin".
+
+2. Example:
+binwalk -e file.bin
+
+
+ - Explanation: Extracts known file signatures from "file.bin".
+
+3. Example:
+binwalk -l file.bin
+
+
+ - Explanation: Lists file signatures and offsets found in "file.bin".
+
+4. Example:
+binwalk -e -D="directory" file.bin
+
+
+ - Explanation: Extracts files to the specified output directory ("directory").
+
+5. Example:
+binwalk -B file.bin
+
+
+ - Explanation: Enables recursive signature scanning within extracted files.
+
+6. Example:
+binwalk -r file.bin
+
+
+ - Explanation: Extracts raw bytes from the file.
+
+7. Example:
+binwalk -x file.bin
+
+
+ - Explanation: Automatically extracts known file signatures.
+
+8. Example:
+binwalk -y file.bin
+
+
+ - Explanation: Suppresses display of offset and hex dump columns.
+
+9. Example:
+binwalk -j 'jpeg' file.bin
+
+
+ - Explanation: Searches for custom signature ("jpeg") in the file.
+
+10. Example:
+binwalk -A file.bin
+
+
+ - Explanation: Searches for ASCII strings in the file.
+
+11. Example:
+binwalk -m file.bin
+
+
+ - Explanation: Extracts metadata from the file.
+
+12. Example:
+binwalk -z file.bin
+
+
+ - Explanation: Extracts zlib-compressed data.
+
+13. Example:
+binwalk -E file.bin
+
+
+ - Explanation: Only displays scan results, suppresses extraction.
+
+14. Example:
+binwalk -C file.bin
+
+
+ - Explanation: Disables signature verification during extraction.
+
+15. Example:
+binwalk -G='file.png' file.bin
+
+
+ - Explanation: Specifies custom output filename for extracted files ("file.png").
+
+16. Example:
+binwalk -W='wordlist.txt' file.bin
+
+
+ - Explanation: Uses a custom wordlist to search for string signatures.
+
+17. Example:
+binwalk -y -v file.bin
+
+
+ - Explanation: Increases verbosity, provides more detailed scan information.
+
+18. Example:
+binwalk -e -D="directory" --dd=".*" file.bin
+
+
+ - Explanation: Specifies a custom regex filter for extracted files.
+
+19. Example:
+binwalk -a file.bin
+
+
+ - Explanation: Performs a more aggressive scan for signatures.
+
+20. Example:
+binwalk -R='0x100' file.bin
+
+
+ - Explanation: Sets the read offset to a specific value (0x100).
+
+These examples cover the most commonly used flags and switches in Binwalk. Each example demonstrates a specific usage and is followed by a brief explanation of its purpose. Feel free to refer to this cheat sheet as a quick reference guide. Remember that Binwalk offers even more options and features beyond what is covered here. For further details, consult the Binwalk documentation or use the -h
+ flag within the tool to access the help menu.
+
