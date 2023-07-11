@@ -1,0 +1,16 @@
+/.htaccess           [33m (Status: 403)[0m [Size: 276]
+/.hta                [33m (Status: 403)[0m [Size: 276]
+/.htpasswd           [33m (Status: 403)[0m [Size: 276]
+/albums              [36m (Status: 301)[0m [Size: 319][34m [--> http://10.10.3.187/gallery/albums/][0m
+/archives            [36m (Status: 301)[0m [Size: 321][34m [--> http://10.10.3.187/gallery/archives/][0m
+/assets              [36m (Status: 301)[0m [Size: 319][34m [--> http://10.10.3.187/gallery/assets/][0m
+/build               [36m (Status: 301)[0m [Size: 318][34m [--> http://10.10.3.187/gallery/build/][0m
+/classes             [36m (Status: 301)[0m [Size: 320][34m [--> http://10.10.3.187/gallery/classes/][0m
+/database            [36m (Status: 301)[0m [Size: 321][34m [--> http://10.10.3.187/gallery/database/][0m
+/dist                [36m (Status: 301)[0m [Size: 317][34m [--> http://10.10.3.187/gallery/dist/][0m
+/inc                 [36m (Status: 301)[0m [Size: 316][34m [--> http://10.10.3.187/gallery/inc/][0m
+/index.php           [32m (Status: 200)[0m [Size: 16844]
+/plugins             [36m (Status: 301)[0m [Size: 320][34m [--> http://10.10.3.187/gallery/plugins/][0m
+/report              [36m (Status: 301)[0m [Size: 319][34m [--> http://10.10.3.187/gallery/report/][0m
+/uploads             [36m (Status: 301)[0m [Size: 320][34m [--> http://10.10.3.187/gallery/uploads/][0m
+/user                [36m (Status: 301)[0m [Size: 317][34m [--> http://10.10.3.187/gallery/user/][0m
