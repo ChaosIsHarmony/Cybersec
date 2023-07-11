@@ -1,4 +1,6 @@
 #!/bin/python3
+#
+# Usage: ./gpt_response_formatter.py <gpt response filename> <properly formatted filename>
 
 import os
 import sys

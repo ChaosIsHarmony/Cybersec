@@ -2,23 +2,24 @@
 #
 # Search through the Dynamic Knowledge Repository for info related to a target tool
 #
-# Usage: ./search_dkr.sh <tool> <keyword>
+# Usage: ./search_dkr.sh <tool> <keyword> <context>
 
 tool=$1
 keyword=$2
+context=$3
 
 printf "___________________\n"
 printf "%s_gpt.txt\n" $tool
-grep -i -C 2 -n $keyword "$tool/${tool}_gpt.txt"
+grep -i -C $context -n $keyword "$tool/${tool}_gpt.txt"
 
 printf "___________________\n"
 printf "tldr\n"
-tldr $tool | grep -i -C 2 $keyword
+tldr $tool | grep -i -C $context $keyword
 
 printf "___________________\n"
 printf "help\n"
-$tool --help | grep -i -C 2 $keyword
+$tool --help | grep -i -C $context $keyword
 
 printf "___________________\n"
 printf "man\n"
-man $tool | grep -i -C 2 $keyword
+man $tool | grep -i -C $context $keyword
