@@ -1,0 +1,21 @@
+binwalk
+[0mFirmware Analysis Tool.More information: https://github.com/ReFirmLabs/binwalk.
+
+ - [23;22;24;25;32mScan a binary file:
+[23;22;24;25;33m   binwalk {{path/to/binary}}
+[0m
+ - [23;22;24;25;32mExtract files from a binary, specifying the output directory:
+[23;22;24;25;33m   binwalk --extract --directory {{output_directory}} {{path/to/binary}}
+[0m
+ - [23;22;24;25;32mRecursively extract files from a binary limiting the recursion depth to 2:
+[23;22;24;25;33m   binwalk --extract --matryoshka --depth {{2}} {{path/to/binary}}
+[0m
+ - [23;22;24;25;32mExtract files from a binary with the specified file signature:
+[23;22;24;25;33m   binwalk --dd '{{png image:png}}' {{path/to/binary}}
+[0m
+ - [23;22;24;25;32mAnalyze the entropy of a binary, saving the plot with the same name as the binary and .png extension appended:
+[23;22;24;25;33m   binwalk --entropy --save {{path/to/binary}}
+[0m
+ - [23;22;24;25;32mCombine entropy, signature and opcodes analysis in a single command:
+[23;22;24;25;33m   binwalk --entropy --signature --opcodes {{path/to/binary}}
+[0m[0m
