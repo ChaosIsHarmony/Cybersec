@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Fri Jul 14 02:41:54 2023 as: nmap -p 1024-65535 -oG nmapScan2.txt 10.10.129.234
+Host: 10.10.129.234 ()	Status: Up
+Host: 10.10.129.234 ()	Ports: 	Ignored State: closed (64512)
+# Nmap done at Fri Jul 14 03:41:59 2023 -- 1 IP address (1 host up) scanned in 3605.40 seconds
