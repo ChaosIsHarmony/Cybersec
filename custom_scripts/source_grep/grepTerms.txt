@@ -1,6 +1,7 @@
 "<!--"
 "/*"
 script
+cred
 pass
 pwd
 user

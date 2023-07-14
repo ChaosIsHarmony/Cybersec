@@ -1,6 +1,1 @@
-/gallery/assets/css/styles.css
-/gallery/dist/js/demo.js
-/gallery/inc/sess_auth.php
-/gallery/index.php
-/gallery/login.php
-/gallery/report
+/index.html

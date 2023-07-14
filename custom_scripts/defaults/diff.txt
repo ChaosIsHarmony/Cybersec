@@ -373,7 +373,7 @@
 > <html xmlns="http://www.w3.org/1999/xhtml">
 >   <!--
 >     Modified from the Debian original for Ubuntu
->     Last updated: 2016-11-16
+>     Last updated: 2014-03-19
 >     See: https://launchpad.net/bugs/1288690
 >   -->
 >   <head>
@@ -670,17 +670,17 @@
 >                            *-available/ counterparts. These should be managed
 >                            by using our helpers
 >                            <tt>
->                                 a2enmod,
->                                 a2dismod,
+>                                 <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">a2enmod</a>,
+>                                 <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">a2dismod</a>,
 >                            </tt>
 >                            <tt>
->                                 a2ensite,
->                                 a2dissite,
+>                                 <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">a2ensite</a>,
+>                                 <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">a2dissite</a>,
 >                             </tt>
 >                                 and
 >                            <tt>
->                                 a2enconf,
->                                 a2disconf
+>                                 <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">a2enconf</a>,
+>                                 <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">a2disconf</a>
 >                            </tt>. See their respective man pages for detailed information.
 >                         </li>
 > 
@@ -703,7 +703,7 @@
 >             <p>
 >                 By default, Ubuntu does not allow access through the web browser to
 >                 <em>any</em> file apart of those located in <tt>/var/www</tt>,
->                 <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
+>                 <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
 >                 directories (when enabled) and <tt>/usr/share</tt> (for web
 >                 applications). If your site is using a web document root
 >                 located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
@@ -724,8 +724,8 @@
 >           <p>
 >                 Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
 >                 Apache2 package with Ubuntu. However, check <a
->                 href="https://bugs.launchpad.net/ubuntu/+source/apache2"
->                 rel="nofollow">existing bug reports</a> before reporting a new bug.
+>                 href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
+>                 bug reports</a> before reporting a new bug.
 >           </p>
 >           <p>
 >                 Please report bugs specific to modules (such as PHP and others)
