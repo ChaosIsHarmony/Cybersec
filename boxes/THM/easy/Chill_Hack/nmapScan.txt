@@ -1,0 +1,4 @@
+# Nmap 7.94 scan initiated Fri Jul 21 02:26:41 2023 as: nmap -sV -O -oG nmapScan.txt 10.10.106.36
+Host: 10.10.106.36 ()	Status: Up
+Host: 10.10.106.36 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/	Ignored State: closed (997)	Seq Index: 251	IP ID Seq: All zeros
+# Nmap done at Fri Jul 21 02:27:10 2023 -- 1 IP address (1 host up) scanned in 29.61 seconds
