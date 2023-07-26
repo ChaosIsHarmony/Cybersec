@@ -1,0 +1,91 @@
+You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of radare2 with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Certainly! Here's a cheat sheet or synopsis of radare2 with examples for the
+20 most commonly used flags or switches:
+
+1.
+r2 -A <binary>: Open a binary file in radare2 with analysis enabled.
+
+ - -A: Enable automatic analysis.
+
+2.
+aaa: Analyze the binary, performing various types of analysis.
+
+ -
+: Perform all analyses (equivalent to
+aaa; aac; aar`).
+
+3. `s <address>`: Seek to a specific address within the binary.
+
+ - `<address>`: The target address to seek to.
+
+4. `pdf`: Disassemble the current function and display it in a pseudo-code format.
+
+ - `pdf`: Display the disassembly in a pseudo-code format.
+
+5. `afn`: List all functions in the binary.
+
+ - `afn`: Show the names of all functions.
+
+6. `izz`: List all strings present in the binary.
+
+ - `izz`: Display all strings.
+
+7. `iS`: List all sections in the binary.
+
+ - `iS`: Show all sections.
+
+8. `ood`: Open a new debugging session.
+
+ - `ood`: Start a new debugging session.
+
+9. `db <address>`: Set a breakpoint at a specific address.
+
+ - `<address>`: The address where the breakpoint should set.
+
+10. `dc`: Continue execution after hitting a breakpoint.
+
+ - `dc`: Continue execution.
+
+11. `dr`: Display register values.
+
+ - `dr`: Show register values.
+
+12. `px <length>`: Examine memory at the current address.
+
+ - `<length>`: The number of bytes to display.
+
+13. `wx <value>`: Write a value to the current address.
+
+ - `<value>`: The value to write.
+
+14. `V`: Enter visual mode for exploring the binary.
+
+ - `V`: Enter visual mode.
+
+15. `ood -d <debugger>`: Open a new debugging session with a specific debugger.
+
+ - `-d <debugger>`: Specify the debugger to use (e.g., gdb, lldb).
+
+16. `ood -r <script>`: Open a new debugging session and run a script.
+
+ - `-r <script>`: Specify a script to run during the debugging session.
+
+17. `afl`: List all functions in the binary with their addresses.
+
+ - `afl`: Show all functions with addresses.
+
+18. `~<string>`: Search for a specific string within the binary.
+
+ - `izz~<string>`: Search for the specified string.
+
+19. `s sym.<symbol>`: Seek to a specific symbol within the binary.
+
+ - `sym.<symbol>`: The name of the symbol to seek to.
+
+20. `V!`: Enter visual mode with advanced features enabled.
+
+ - `V!`: Enter visual mode with advanced features.
+
+These examples and explanations should help you get started with radare2 and its commonly used flags or switches. Remember to refer to the official documentation for more detailed information on each command and its options.
+
