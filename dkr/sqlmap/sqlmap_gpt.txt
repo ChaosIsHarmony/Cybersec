@@ -1,0 +1,71 @@
+You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of sqlmap with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Sure! Here's a cheat sheet or synopsis of SQLmap with examples for the
+20 most commonly used flags or switches:
+
+1. Target Usage Example:
+
+
+
+sqlmap -u http://example.com/page?param=value
+
+
+2. -u URL: Specifies the target URL.
+
+3.
+--data DATA: Specifies the data string to be sent as POST request.
+
+4.
+--cookie COOKIE: Specifies the cookie value to be used for authentication.
+
+5.
+--headers HEADERS: Specifies additional headers to be added to the request.
+
+6.
+--level LEVEL: Specifies the injection level (1-5) for automatic tests.
+
+7.
+--risk RISK: Specifies the risk level (1-3) for automatic tests.
+
+8.
+--dbms DBMS: Specifies the DBMS type (e.g., MySQL, Oracle) to be tested.
+
+9.
+--tables: Retrieves the names of all tables in the current database.
+
+10.
+--columns: Retrieves the columns and their types of a specific table.
+
+11.
+--dump: Dumps the contents of a specific table.
+
+12.
+--dbs: Enumerates all databases on the server.
+
+13.
+--os-shell: Spawns an interactive operating system shell.
+
+14.
+--technique TECH: Specifies the SQL injection technique to be used.
+
+15.
+--time-sec SECONDS: Sets the number of seconds to wait for each request.
+
+16.
+--threads THREADS: Specifies the number of concurrent HTTP requests.
+
+17.
+--random-agent: Uses a random User-Agent header for each request.
+
+18.
+--tamper TAMPER: Specifies a script to modify the payload in various ways.
+
+19.
+--batch: Runs in non-interactive mode (no questions asked).
+
+20. -v LEVEL: Verbosity level (0-6) for displaying detailed output.
+
+Remember that SQLmap is a powerful tool, and its misuse can have serious legal and ethical implications. Always ensure you have proper authorization and consent before performing any security tests or penetration testing activities.
+
+Note: The examples provided assume a basic understanding of SQL injection and the usage of SQLmap.
+
