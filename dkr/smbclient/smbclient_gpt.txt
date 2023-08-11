@@ -1,0 +1,980 @@
+You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of smbclient with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Absolutely
+,
+ I
+'d
+ be
+ happy
+ to
+ help
+ you
+ understand
+
+
+s
+mb
+client
+
+
+ and
+ its
+ commonly
+ used
+ flags
+ with
+ simple
+ explanations
+ and
+ examples
+.
+
+
+s
+mb
+client
+
+
+ is
+ a
+ command
+-line
+ tool
+ used
+ to
+ interact
+ with
+ Windows
+ and
+ S
+amba
+ shares
+.
+ Here
+'s
+ a
+ concise
+ cheat
+ sheet
+ with
+ explanations
+ and
+ examples
+ for
+ the
+
+
+20
+ most
+ commonly
+ used
+ flags
+:
+
+1
+.
+ **
+Connecting
+ to
+ a
+ Share
+:
+**
+
+
+
+
+
+
+ smb
+client
+ //
+server
+/share
+ -
+U
+ username
+
+
+
+
+ ```
+
+
+ -
+
+
+//
+server
+/share
+:
+ Specifies
+ the
+ server
+ and
+ share
+ name
+.
+
+
+ -
+ -
+U
+ username
+:
+ Specifies
+ the
+ username
+ for
+ authentication
+.
+
+2
+.
+ **
+Listing
+ Files
+:
+**
+
+
+
+
+
+
+ smb
+client
+ -
+L
+ //
+server
+ -
+U
+ username
+
+
+
+
+ ```
+
+
+ -
+ -
+L
+ //
+server
+:
+ Lists
+ available
+ shares
+ on
+ the
+ server
+.
+
+3
+.
+ **
+Inter
+acting
+ with
+ a
+ Share
+:
+**
+
+
+
+
+
+
+ smb
+client
+ //
+server
+/share
+ -
+U
+ username
+ -
+c
+ '
+command
+'
+
+
+ ```
+
+
+ -
+ -
+c
+ '
+command
+'
+:
+ Executes
+ a
+ single
+ command
+ after
+ connecting
+.
+
+4
+.
+ **
+Downloading
+ Files
+:
+**
+
+
+
+
+
+
+ get
+ filename
+
+
+
+
+ ```
+
+
+ -
+
+
+get
+ filename
+:
+ Downloads
+ a
+ file
+ from
+ the
+ share
+.
+
+5
+.
+ **
+Up
+loading
+ Files
+:
+**
+
+
+
+
+
+
+ put
+ local
+file
+
+
+
+
+ ```
+
+
+ -
+
+
+put
+ local
+file
+:
+ Upload
+s
+ a
+ local
+ file
+ to
+ the
+ share
+.
+
+6
+.
+ **
+Navig
+ating
+ Shares
+:
+**
+
+
+
+
+
+
+ cd
+ dirname
+
+
+
+
+ ```
+
+
+ -
+
+
+cd
+ dirname
+:
+ Changes
+ the
+ current
+ directory
+ on
+ the
+ share
+.
+
+7
+.
+ **
+Creating
+ Direct
+ories
+:
+**
+
+
+
+
+
+
+ mkdir
+ new
+dir
+
+
+
+
+ ```
+
+
+ -
+
+
+mkdir
+ new
+dir
+:
+ Creates
+ a
+ new
+ directory
+ on
+ the
+ share
+.
+
+8
+.
+ **
+Deleting
+ Files
+:
+**
+
+
+
+
+
+
+ del
+ filename
+
+
+
+
+ ```
+
+
+ -
+
+
+del
+ filename
+:
+ Deletes
+ a
+ file
+ from
+ the
+ share
+.
+
+9
+.
+ **
+Deleting
+ Direct
+ories
+:
+**
+
+
+
+
+
+
+ r
+mdir
+ dirname
+
+
+
+
+ ```
+
+
+ -
+
+
+r
+mdir
+ dirname
+:
+ Deletes
+ a
+ directory
+ from
+ the
+ share
+.
+
+10
+.
+ **
+Printing
+ Files
+:
+**
+
+
+
+
+
+
+ print
+ filename
+
+
+
+
+ ```
+
+
+ -
+
+
+print
+ filename
+:
+ Sends
+ a
+ file
+ to
+ the
+ default
+ printer
+.
+
+11
+.
+ **
+Ren
+aming
+ Files
+:
+**
+
+
+
+
+
+
+ rename
+ old
+name
+ new
+name
+
+
+
+
+ ```
+
+
+ -
+
+
+rename
+ old
+name
+ new
+name
+:
+ Ren
+ames
+ a
+ file
+ on
+ the
+ share
+.
+
+12
+.
+ **
+Searching
+ for
+ Files
+:
+**
+
+
+
+
+
+
+ mask
+ '*.
+txt
+';
+ recurse
+ on
+;
+ prompt
+ off
+;
+ ls
+
+
+
+
+ ```
+
+
+ -
+
+
+mask
+ '*.
+txt
+'
+:
+ Filters
+ files
+ by
+ a
+ specific
+ mask
+.
+
+
+ -
+
+
+recur
+se
+ on
+:
+ Enables
+ recursive
+ directory
+ listing
+.
+
+
+ -
+
+
+prompt
+ off
+:
+ Dis
+ables
+ interactive
+ prompts
+.
+
+13
+.
+ **
+Changing
+ Permissions
+:
+**
+
+
+
+
+
+
+ chmod
+
+
+755
+ filename
+
+
+
+
+ ```
+
+
+ -
+
+
+chmod
+
+
+755
+ filename
+:
+ Changes
+ permissions
+ of
+ a
+ file
+.
+
+14
+.
+ **
+View
+ing
+ Help
+:
+**
+
+
+
+
+
+
+ ?
+
+
+ ```
+
+
+ -
+
+
+?
+:
+ Displays
+ a
+ list
+ of
+ available
+ commands
+.
+
+15
+.
+ **
+Qu
+itting
+ smb
+client
+:
+**
+
+
+
+
+
+
+ quit
+
+
+
+
+ ```
+
+
+ -
+
+
+quit
+:
+ Ex
+its
+ the
+ smb
+client
+ session
+.
+
+16
+.
+ **
+Using
+ a
+ Specific
+ Port
+:
+**
+
+
+
+
+
+
+ smb
+client
+ //
+server
+/share
+ -
+p
+ port
+
+
+
+
+ ```
+
+
+ -
+ -
+p
+ port
+:
+ Specifies
+ a
+ custom
+ port
+ number
+.
+
+17
+.
+ **
+Connecting
+ An
+onym
+ously
+:
+**
+
+
+
+
+
+
+ smb
+client
+ //
+server
+/share
+ -
+N
+
+
+
+
+ ```
+
+
+ -
+ -
+N
+:
+ Connect
+s
+ without
+ a
+ password
+ (
+anonymous
+).
+
+18
+.
+ **
+Using
+ a
+ Domain
+:
+**
+
+
+
+
+
+
+ smb
+client
+ //
+server
+/share
+ -
+W
+ domain
+
+
+
+
+ ```
+
+
+ -
+ -
+W
+ domain
+:
+ Specifies
+ the
+ Windows
+ domain
+.
+
+19
+.
+ **
+Listing
+ Available
+ Shares
+ Verb
+os
+ely
+:
+**
+
+
+
+
+
+
+ smb
+client
+ -
+L
+ //
+server
+ -
+v
+
+
+
+
+ ```
+
+
+ -
+ -
+v
+:
+ Displays
+ detailed
+ information
+.
+
+20
+.
+ **
+Spec
+ifying
+ a
+ Work
+group
+:
+**
+
+
+
+
+
+
+ smb
+client
+ //
+server
+/share
+ -
+W
+ work
+group
+ -
+U
+ username
+
+
+
+
+ ```
+
+
+ -
+ -
+W
+ work
+group
+:
+ Specifies
+ the
+ work
+group
+.
+
+Remember
+,
+
+
+s
+mb
+client
+
+
+ is
+ a
+ powerful
+ tool
+ for
+ interacting
+ with
+ SMB
+ shares
+,
+ and
+ these
+ examples
+ cover
+ some
+ of
+ the
+ most
+ common
+ use
+ cases
+.
+ Always
+ use
+ this
+ tool
+ responsibly
+ and
+ eth
+ically
+,
+ respecting
+ any
+ legal
+ and
+ ethical
+ boundaries
+.
+
+

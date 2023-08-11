@@ -2,7 +2,7 @@
 #
 # Search through the Dynamic Knowledge Repository for info related to a target tool
 #
-# Usage: ./search_dkr.sh <tool> <keyword> <context>
+# Usage: utils/search_dkr.sh <tool> <keyword> <context>
 
 tool=$1
 keyword=$2

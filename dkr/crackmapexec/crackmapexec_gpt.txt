@@ -1,0 +1,1443 @@
+You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of crackmapexec with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+**
+C
+heat
+ Sheet
+:
+ crack
+map
+exec
+ Usage
+ and
+ Common
+ Flags
+**
+
+Cr
+ack
+Map
+Exec
+ (
+C
+ME
+)
+ is
+ a
+ powerful
+ tool
+ used
+ in
+ ethical
+ hacking
+ to
+ assess
+ the
+ security
+ of
+ Windows
+ networks
+.
+ It
+ focuses
+ on
+ various
+ network
+ attack
+ techniques
+,
+ like
+ credential
+ brute
+-for
+cing
+,
+ lateral
+ movement
+,
+ and
+ information
+ gathering
+.
+ Below
+,
+ I
+'ll
+ provide
+ examples
+ of
+ usage
+ for
+ the
+
+
+20
+ most
+ commonly
+ used
+ flags
+ or
+ switches
+,
+ along
+ with
+ brief
+ explanations
+.
+
+1
+.
+ **
+Example
+ Usage
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+0
+/
+24
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+cr
+ack
+map
+exec
+:
+ Command
+ to
+ run
+ Crack
+Map
+Exec
+.
+
+
+ -
+
+
+192
+.
+168
+.
+1
+.
+0
+/
+24
+:
+ Specifies
+ the
+ target
+ IP
+ range
+.
+
+2
+.
+ **
+-
+u
+,
+ --
+user
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+u
+ admin
+:
+ Specifies
+ a
+ single
+ username
+ to
+ target
+.
+
+3
+.
+ **
+-
+p
+,
+ --
+pass
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+ -
+p
+ Password
+123
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+p
+ Password
+123
+:
+ Specifies
+ the
+ password
+ for
+ the
+ given
+ username
+.
+
+4
+.
+ **
+-
+d
+,
+ --
+domain
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+ -
+p
+ Password
+123
+ -
+d
+ DOMAIN
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+d
+ DOMAIN
+:
+ Specifies
+ the
+ domain
+ name
+.
+
+5
+.
+ **
+-
+M
+,
+ --
+module
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+ -
+p
+ Password
+123
+ -
+d
+ DOMAIN
+ -
+M
+ smb
+exec
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+M
+ smb
+exec
+:
+ Specifies
+ the
+ attack
+ module
+ to
+ use
+ (
+e
+.g
+.,
+ smb
+exec
+).
+
+6
+.
+ **
+-
+x
+,
+ --
+exec
+-method
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+ -
+p
+ Password
+123
+ -
+d
+ DOMAIN
+ -
+x
+ w
+mi
+exec
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+x
+ w
+mi
+exec
+:
+ Specifies
+ the
+ method
+ for
+ executing
+ commands
+ (
+e
+.g
+.,
+ w
+mi
+exec
+).
+
+7
+.
+ **
+-
+o
+,
+ --
+outfile
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+ -
+p
+ Password
+123
+ -
+d
+ DOMAIN
+ -
+o
+ results
+.txt
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+o
+ results
+.txt
+:
+ Specifies
+ an
+ output
+ file
+ to
+ save
+ results
+.
+
+8
+.
+ **
+-
+v
+,
+ --
+verbose
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ -
+u
+ admin
+ -
+p
+ Password
+123
+ -
+d
+ DOMAIN
+ -
+v
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+ -
+v
+:
+ Enables
+ verbose
+ mode
+ to
+ display
+ detailed
+ information
+.
+
+9
+.
+ **
+--
+shares
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+shares
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+shares
+:
+ Enum
+er
+ates
+ accessible
+ file
+ shares
+ on
+ target
+ systems
+.
+
+10
+.
+ **
+--
+users
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+users
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+users
+:
+ Enum
+er
+ates
+ user
+ accounts
+ on
+ target
+ systems
+.
+
+11
+.
+ **
+--
+sessions
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+sessions
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+sessions
+:
+ Lists
+ active
+ sessions
+ on
+ target
+ systems
+.
+
+12
+.
+ **
+--
+local
+-auth
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+local
+-auth
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+local
+-auth
+:
+ Attempts
+ to
+ authenticate
+ with
+ locally
+ cached
+ credentials
+.
+
+13
+.
+ **
+--
+rid
+-br
+ute
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+rid
+-br
+ute
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+rid
+-br
+ute
+:
+ Performs
+ RID
+ cycling
+ to
+ find
+ valid
+ usernames
+.
+
+14
+.
+ **
+--
+lsa
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+lsa
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+lsa
+:
+ D
+umps
+ L
+SA
+ secrets
+ from
+ target
+ systems
+.
+
+15
+.
+ **
+--
+at
+tempts
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+at
+tempts
+
+
+3
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+at
+tempts
+
+
+3
+:
+ Sets
+ the
+ maximum
+ number
+ of
+ authentication
+ attempts
+.
+
+16
+.
+ **
+--
+continue
+-on
+-success
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+continue
+-on
+-success
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+continue
+-on
+-success
+:
+ Contin
+ues
+ execution
+ after
+ a
+ successful
+ authentication
+.
+
+17
+.
+ **
+--
+no
+-pass
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+no
+-pass
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+no
+-pass
+:
+ Attempts
+ to
+ authenticate
+ without
+ a
+ password
+.
+
+18
+.
+ **
+--
+sam
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+sam
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+sam
+:
+ D
+umps
+ SAM
+ database
+ from
+ target
+ systems
+.
+
+19
+.
+ **
+--
+k
+passwd
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+k
+passwd
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+k
+passwd
+:
+ Performs
+ Ker
+beros
+ password
+ guessing
+.
+
+20
+.
+ **
+--
+verbose
+:
+**
+
+
+
+
+bash
+
+
+
+
+ crack
+map
+exec
+
+
+192
+.
+168
+.
+1
+.
+10
+ --
+verbose
+
+
+
+
+ ```
+
+
+ -
+ **
+Explanation
+:
+**
+
+
+ -
+
+
+--
+verbose
+:
+ Displays
+ verbose
+ output
+ (
+same
+ as
+ -
+v
+
+
+).
+
+Remember
+,
+ ethical
+ hacking
+ should
+ be
+ conducted
+ responsibly
+ and
+ legally
+,
+ with
+ proper
+ authorization
+ and
+ intent
+.
+ Always
+ ensure
+ you
+ have
+ the
+ necessary
+ permissions
+ before
+ using
+ tools
+ like
+ Crack
+Map
+Exec
+.
+
+

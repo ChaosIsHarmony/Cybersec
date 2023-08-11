@@ -1,4 +1,1014 @@
 You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of strace with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
 
+**
+Str
+ace
+ Cheat
+ Sheet
+:
+ Expl
+oring
+ System
+ Calls
+ and
+ Trou
+b
+leshooting
+ with
+ Examples
+**
+
+Str
+ace
+ is
+ a
+ powerful
+ command
+-line
+ tool
+ used
+ to
+ trace
+ and
+ analyze
+ system
+ calls
+ and
+ signals
+ made
+ by
+ a
+ program
+.
+ It
+'s
+ invaluable
+ for
+ debugging
+,
+ troubleshooting
+,
+ and
+ understanding
+ how
+ software
+ interacts
+ with
+ the
+ operating
+ system
+.
+ Below
+ is
+ a
+ cheat
+ sheet
+ with
+ examples
+ for
+ the
+
+
+20
+ most
+ commonly
+ used
+ flags
+ or
+ switches
+ in
+ str
+ace
+.
+
+1
+.
+ **
+Basic
+ Usage
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Trace
+ system
+ calls
+ made
+ by
+ the
+
+
+ls
+ -
+l
+
+
+ command
+.
+
+2
+.
+ **
+Display
+ System
+ Calls
+ Only
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+e
+ trace
+=open
+,
+read
+,
+write
+,
+close
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Trace
+ specific
+ system
+ calls
+ (
+open
+,
+ read
+,
+ write
+,
+ close
+)
+ made
+ by
+ the
+ command
+.
+
+3
+.
+ **
+Display
+ System
+ Calls
+ and
+ Signals
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+etr
+ace
+=open
+,
+read
+ -
+p
+
+
+123
+4
+
+
+
+
+ Explanation
+:
+ Attach
+ to
+ an
+ existing
+ process
+ with
+ PID
+
+
+123
+4
+ and
+ trace
+ specified
+ system
+ calls
+.
+
+4
+.
+ **
+Output
+ to
+ a
+ File
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+o
+ output
+.txt
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Save
+ trace
+ output
+ to
+ a
+ file
+ (
+output
+.txt
+).
+
+5
+.
+ **
+Follow
+ Fork
+s
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+f
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Trace
+ child
+ processes
+ (
+fork
+s
+)
+ created
+ by
+ the
+ command
+.
+
+6
+.
+ **
+Trace
+ by
+ Process
+ Group
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+g
+ -
+p
+
+
+123
+4
+
+
+
+
+ Explanation
+:
+ Trace
+ the
+ process
+ and
+ its
+ child
+ processes
+ in
+ the
+ same
+ process
+ group
+.
+
+7
+.
+ **
+Time
+ and
+ Call
+ Summary
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+c
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Show
+ a
+ summary
+ of
+ time
+ and
+ call
+ count
+ for
+ each
+ system
+ call
+.
+
+8
+.
+ **
+Display
+ Absolute
+ Timestamp
+s
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+t
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Show
+ absolute
+ timestamps
+ in
+ the
+ trace
+ output
+.
+
+9
+.
+ **
+Display
+ Relative
+ Timestamp
+s
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+r
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Show
+ relative
+ timestamps
+ in
+ the
+ trace
+ output
+.
+
+10
+.
+ **
+Trace
+ Specific
+ Process
+ by
+ Name
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+e
+ trace
+=open
+,
+read
+ -
+e
+ exec
+ve
+ -
+e
+ signal
+=
+SIG
+INT
+ -
+o
+ output
+.txt
+ -
+p
+ "$(
+pid
+of
+ firefox
+)
+"
+
+
+ Explanation
+:
+ Trace
+ Firefox
+ processes
+,
+ capturing
+ open
+,
+ read
+,
+ exec
+ve
+ sys
+calls
+ and
+ SIG
+INT
+ signals
+.
+
+11
+.
+ **
+Filter
+ by
+ Process
+ ID
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+p
+
+
+123
+4
+ -
+p
+
+
+567
+8
+
+
+
+
+ Explanation
+:
+ Trace
+ processes
+ with
+ P
+IDs
+
+
+123
+4
+ and
+
+
+567
+8
+.
+
+12
+.
+ **
+Filter
+ by
+ Process
+ Name
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+e
+ trace
+=open
+ -
+p
+ :
+http
+d
+
+
+
+
+ Explanation
+:
+ Trace
+ processes
+ with
+ names
+ containing
+ "
+http
+d
+."
+
+13
+.
+ **
+Display
+ Memory
+ Usage
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+v
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Display
+ verbose
+ memory
+ usage
+ information
+.
+
+14
+.
+ **
+Display
+ Extended
+ Information
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+yy
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Display
+ even
+ more
+ detailed
+ information
+.
+
+15
+.
+ **
+Limit
+ Trace
+ to
+ N
+ Calls
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+c
+ -
+e
+ open
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Display
+ summary
+ and
+ trace
+ only
+ the
+ first
+ '
+N
+'
+ open
+ calls
+.
+
+16
+.
+ **
+Display
+ System
+ Call
+ Numbers
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+e
+ trace
+=open
+,
+read
+ -
+y
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Display
+ system
+ call
+ numbers
+ along
+ with
+ their
+ names
+.
+
+17
+.
+ **
+Suppress
+ Error
+ Messages
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+qq
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Suppress
+ error
+ messages
+ in
+ trace
+ output
+.
+
+18
+.
+ **
+Display
+ Raw
+ System
+ Call
+ Arguments
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+e
+ trace
+=open
+,
+read
+ -
+xx
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Display
+ raw
+ argument
+ data
+ for
+ specified
+ system
+ calls
+.
+
+19
+.
+ **
+Trace
+ Existing
+ Process
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+p
+
+
+123
+4
+
+
+
+
+ Explanation
+:
+ Attach
+ to
+ an
+ existing
+ process
+ with
+ PID
+
+
+123
+4
+ and
+ trace
+ all
+ its
+ system
+ calls
+.
+
+20
+.
+ **
+Continue
+ on
+ Error
+:
+**
+
+
+ Example
+:
+
+
+str
+ace
+ -
+c
+ -
+e
+ open
+,
+read
+,
+write
+ ls
+ -
+l
+
+
+
+
+ Explanation
+:
+ Continue
+ tracing
+ even
+ if
+ errors
+ occur
+ during
+ certain
+ system
+ calls
+.
+
+Remember
+,
+ str
+ace
+ is
+ a
+ versatile
+ tool
+,
+ and
+ mastering
+ its
+ flags
+ can
+ significantly
+ enhance
+ your
+ understanding
+ of
+ program
+ behavior
+ and
+ system
+ interactions
+.
+ Practice
+ tracing
+ different
+ programs
+ and
+ explore
+ various
+ scenarios
+ to
+ become
+ proficient
+ in
+ using
+ str
+ace
+ for
+ debugging
+ and
+ analysis
+.
 
 
