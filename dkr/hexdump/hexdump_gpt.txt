@@ -1,0 +1,927 @@
+You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of hexdump with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+Title
+:
+ Hex
+dump
+ Cheat
+ Sheet
+
+
+
+Hex
+dump
+ is
+ a
+ versatile
+ command
+-line
+ tool
+ used
+ to
+ display
+ binary
+ files
+ in
+ various
+ formats
+,
+ providing
+ insight
+ into
+ their
+ content
+.
+ Here
+'s
+ a
+ synopsis
+ of
+ the
+ most
+ commonly
+ used
+ flags
+ and
+ switches
+,
+ along
+ with
+ examples
+ to
+ illustrate
+ their
+ usage
+:
+
+1
+.
+ **
+Basic
+ Hex
+ Dump
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ hexadecimal
+ and
+ ASCII
+ representations
+ of
+ the
+ file
+ content
+.
+
+2
+.
+ **
+Decimal
+ Offset
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+d
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ file
+ content
+ with
+ decimal
+ offsets
+.
+
+3
+.
+ **
+Character
+ Display
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+c
+ filename
+
+
+
+
+ Explanation
+:
+ Shows
+ ASCII
+ characters
+ alongside
+ hexadecimal
+ values
+.
+
+4
+.
+ **
+Oct
+al
+ Display
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+o
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ file
+ content
+ in
+ oct
+al
+ format
+.
+
+5
+.
+ **
+Hex
+adecimal
+ Display
+ (
+Group
+ed
+)**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+x
+ filename
+
+
+
+
+ Explanation
+:
+ Groups
+ hexadecimal
+ values
+ for
+ better
+ readability
+.
+
+6
+.
+ **
+Hex
+adecimal
+ Display
+ (
+Continuous
+)**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ all
+ input
+ data
+ in
+ a
+ continuous
+ hexadecimal
+ format
+.
+
+7
+.
+ **
+Byte
+ Re
+vers
+al
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+C
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ bytes
+ in
+ little
+-end
+ian
+ (
+byte
+-re
+versed
+)
+ format
+.
+
+8
+.
+ **
+Display
+ Length
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+n
+
+
+16
+ filename
+
+
+
+
+ Explanation
+:
+ Limits
+ output
+ to
+ the
+ first
+
+
+16
+ bytes
+ of
+ the
+ file
+.
+
+9
+.
+ **
+Skip
+ Bytes
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+s
+
+
+32
+ filename
+
+
+
+
+ Explanation
+:
+ Sk
+ips
+ the
+ first
+
+
+32
+ bytes
+ of
+ the
+ file
+ before
+ displaying
+.
+
+10
+.
+ **
+Custom
+ Format
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+e
+ '
+1
+/
+2
+ "%
+04
+x
+ "'
+ filename
+
+
+
+
+ Explanation
+:
+ Specifies
+ a
+ custom
+ output
+ format
+ for
+ hexadecimal
+ display
+.
+
+11
+.
+ **
+Show
+ Line
+ Numbers
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+e
+ '"
+%
+08
+_ax
+:
+ "
+
+
+16
+/
+1
+ "%
+02
+x
+ "
+ "\
+n
+"'
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ line
+ numbers
+ and
+ custom
+ formatted
+ output
+.
+
+12
+.
+ **
+Binary
+ Display
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+b
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ binary
+ format
+ alongside
+ hexadecimal
+.
+
+13
+.
+ **
+Count
+ and
+ Skip
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+s
+
+
+128
+ -
+n
+
+
+16
+ filename
+
+
+
+
+ Explanation
+:
+ Sk
+ips
+
+
+128
+ bytes
+ and
+ then
+ displays
+ the
+ following
+
+
+16
+ bytes
+.
+
+14
+.
+ **
+Compact
+ Output
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+e
+ '/
+1
+ "%
+02
+x
+ "'
+ filename
+
+
+
+
+ Explanation
+:
+ Provides
+ compact
+ hexadecimal
+ output
+ without
+ offsets
+.
+
+15
+.
+ **
+No
+ ASCII
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+e
+ '
+16
+/
+1
+ "%
+02
+x
+ "
+ "\
+n
+"'
+ filename
+
+
+
+
+ Explanation
+:
+ Suppress
+es
+ ASCII
+ display
+,
+ showing
+ only
+ hexadecimal
+ values
+.
+
+16
+.
+ **
+Include
+/
+Exclude
+ Filters
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+e
+ '
+8
+/
+1
+ "%
+02
+x
+ "
+ "\
+n
+"'
+ -
+n
+
+
+16
+ filename
+
+
+
+
+ Explanation
+:
+ Limits
+ output
+ to
+
+
+16
+ bytes
+ with
+ custom
+ format
+.
+
+17
+.
+ **
+Big
+-
+Endian
+ Display
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+e
+ '
+16
+/
+2
+ "%
+04
+x
+ "
+ "\
+n
+"'
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ hexadecimal
+ in
+ big
+-end
+ian
+ format
+.
+
+18
+.
+ **
+Hex
+adecimal
+ and
+ ASCII
+ (
+Compact
+)**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+v
+ -
+e
+ '
+8
+/
+1
+ "%
+02
+x
+ "
+ "
+ "
+
+
+8
+/
+1
+ "%
+_
+p
+"
+ "\
+n
+"'
+ filename
+
+
+
+
+ Explanation
+:
+ Compact
+ display
+ of
+ hexadecimal
+ and
+ ASCII
+ values
+.
+
+19
+.
+ **
+Append
+ to
+ Output
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+C
+ filename
+ >
+ output
+.txt
+
+
+
+
+ Explanation
+:
+ Redirect
+s
+ the
+ output
+ to
+ a
+ text
+ file
+.
+
+20
+.
+ **
+Display
+ File
+ Size
+**
+:
+
+
+ Example
+:
+
+
+hex
+dump
+ -
+s
+ -
+8
+M
+ filename
+
+
+
+
+ Explanation
+:
+ Displays
+ the
+ last
+
+
+8
+ meg
+abytes
+ of
+ the
+ file
+.
+
+Remember
+,
+ hex
+dump
+'s
+ flexibility
+ allows
+ you
+ to
+ tailor
+ the
+ output
+ to
+ your
+ needs
+,
+ making
+ it
+ a
+ powerful
+ tool
+ for
+ analyzing
+ binary
+ files
+ and
+ data
+ structures
+.
+
+

