@@ -1,1 +1,0 @@
-# Nmap 7.94 scan initiated Thu Jul 13 22:00:22 2023 as: nmap -A -p 1024-65535 -oG nmapScan.txt 10.10.193.177

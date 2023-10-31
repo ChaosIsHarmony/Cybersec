@@ -1,36 +1,0 @@
-===============================================================
-Gobuster v3.5
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.10.81.227
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.5
-[+] Extensions:              php,html,txt
-[+] Timeout:                 10s
-===============================================================
-2023/07/01 12:06:47 Starting gobuster in directory enumeration mode
-===============================================================
-[2K/archive              (Status: 301) [Size: 118] [--> /]
-[2K/Archive              (Status: 301) [Size: 118] [--> /]
-[2K/authors              (Status: 200) [Size: 4070]
-[2K/blog                 (Status: 200) [Size: 5394]
-[2K/Blog                 (Status: 200) [Size: 5394]
-[2K/categories           (Status: 200) [Size: 3541]
-[2K/install              (Status: 302) [Size: 126] [--> /umbraco/]
-[2K/robots.txt           (Status: 200) [Size: 192]
-[2K/robots.txt           (Status: 200) [Size: 192]
-[2K/rss                  (Status: 200) [Size: 1863]
-[2K/RSS                  (Status: 200) [Size: 1863]
-[2K/search               (Status: 200) [Size: 3418]
-[2K/Search               (Status: 200) [Size: 3418]
-[2K/sitemap              (Status: 200) [Size: 1036]
-[2K/SiteMap              (Status: 200) [Size: 1036]
-[2K/tags                 (Status: 200) [Size: 3544]
-[2K/umbraco              (Status: 200) [Size: 4078]
-
-===============================================================
-2023/07/01 12:36:05 Finished
-===============================================================

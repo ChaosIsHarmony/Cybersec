@@ -1,36 +1,0 @@
-===============================================================
-Gobuster v3.5
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.10.57.231
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/dirb/wordlists/big.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.5
-[+] Extensions:              php,html,txt
-[+] Timeout:                 10s
-===============================================================
-2023/06/30 01:29:01 Starting gobuster in directory enumeration mode
-===============================================================
-[2K/.htaccess.php        (Status: 403) [Size: 300]
-[2K/.htaccess            (Status: 403) [Size: 296]
-[2K/.htaccess.html       (Status: 403) [Size: 301]
-[2K/.htaccess.txt        (Status: 403) [Size: 300]
-[2K/.htpasswd            (Status: 403) [Size: 296]
-[2K/.htpasswd.php        (Status: 403) [Size: 300]
-[2K/.htpasswd.html       (Status: 403) [Size: 301]
-[2K/.htpasswd.txt        (Status: 403) [Size: 300]
-[2K/LICENSE.txt          (Status: 200) [Size: 17128]
-[2K/README.txt           (Status: 200) [Size: 1288]
-[2K/assets               (Status: 301) [Size: 313] [--> http://10.10.57.231/assets/]
-[2K/images               (Status: 301) [Size: 313] [--> http://10.10.57.231/images/]
-[2K/index.html           (Status: 200) [Size: 2629]
-[2K/robots.txt           (Status: 200) [Size: 26]
-[2K/robots.txt           (Status: 200) [Size: 26]
-[2K/security.txt         (Status: 200) [Size: 459]
-[2K/server-status        (Status: 403) [Size: 300]
-
-===============================================================
-2023/06/30 02:00:49 Finished
-===============================================================

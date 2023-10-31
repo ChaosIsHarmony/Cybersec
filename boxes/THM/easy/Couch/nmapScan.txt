@@ -1,4 +1,0 @@
-# Nmap 7.94 scan initiated Sun Jul 16 21:33:56 2023 as: nmap -Pn -sV -sC -oG nmapScan.txt couch.thm
-Host: 10.10.106.64 ()	Status: Up
-Host: 10.10.106.64 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)/, 4125/filtered/tcp//rww///, 8007/filtered/tcp//ajp12///	Ignored State: closed (997)
-# Nmap done at Sun Jul 16 21:35:41 2023 -- 1 IP address (1 host up) scanned in 104.37 seconds

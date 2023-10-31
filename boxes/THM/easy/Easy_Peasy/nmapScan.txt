@@ -1,3 +1,0 @@
-Starting Nmap 7.94 ( https://nmap.org ) at 2023-06-27 06:05 EDT
-Stats: 0:01:35 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
-Connect Scan Timing: About 0.67% done
