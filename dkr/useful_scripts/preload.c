@@ -1,3 +1,4 @@
+/*
 # Conditions:
 # 	Result of running sudo -l returns something including:
 # 		
@@ -12,6 +13,7 @@
 #
 # How to exploit:
 #	sudo LD_PRELOAD=/tmp/preload.so <program on sudo -l list>
+*/
 
 #include <stdio.h>
 #include <sys/types.h>
