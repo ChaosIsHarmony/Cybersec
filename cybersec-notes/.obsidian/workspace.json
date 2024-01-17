@@ -160,23 +160,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55fb322f678a91b3",
+  "active": "f6e733cc95fa6bdc",
   "lastOpenFiles": [
     "Certifications/PJPT/Active_Directory.md~",
     "THM/boxes/medium/Watcher/recon.md",
+    "THM/boxes/medium/Watcher/recon.md~",
+    "THM/boxes/medium/Watcher/creds.txt~",
+    "THM/boxes/medium/Watcher/creds.txt",
     "Certifications/PJPT/Active_Directory.md",
+    "Welcome.md",
     "exploits/OWASP",
     "exploits",
     "Certifications/PJPT",
     "Certifications",
     "tools/hydra.md~",
-    "THM/boxes/medium/Watcher/recon.md~",
     "tools/hydra.md",
     "tools",
-    "THM/boxes/medium/Watcher",
-    "THM/boxes/medium",
-    "THM/boxes",
-    "create a link.md",
-    "Welcome.md"
+    "create a link.md"
   ]
 }

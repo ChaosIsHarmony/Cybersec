@@ -46,8 +46,21 @@ Logical Components
         - Class objects are those that can be created inside the AD system (e.g., User, Computer, Printer, Service, etc.)
         - Attribute objects are info that can be attached to objects (e.g., Display name) 
   - Domains
+    - Function
+      - Group and manage objects in an organization
   - Domain Trees
+    - Function
+      - A hierarchy of domains 
+    - Features
+      - All domains in a tree share the same namespace
+      - Two-way transitive trust between domains within the tree
   - Forests
+    - A collection of domains
+    - All trees have shared common schema and configuration partition
   - Organizational Units (OU)
+    - A container for objects that have shared functionality & policies
+  - Trusts
+    - Directional extends from Trusting domain to Trusted domain
+    - Transitive extends beyond a two domain trust relationship to include all steps of trust in between
   - Partitions
   - Sites
