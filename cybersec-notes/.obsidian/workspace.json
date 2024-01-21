@@ -13,24 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Certifications/PJPT/Active_Directory.md",
-                "mode": "source",
+                "file": "exploits/OWASP/SQL_Injection.md",
+                "mode": "preview",
                 "source": false
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "632a3e29f06060ef",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "84c8f966b7899e61",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Certifications/PJPT/Active_Directory.md",
+                "file": "exploits/OWASP/SQL_Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Certifications/PJPT/Active_Directory.md",
+                "file": "exploits/OWASP/SQL_Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Certifications/PJPT/Active_Directory.md"
+                "file": "exploits/OWASP/SQL_Injection.md"
               }
             }
           }
@@ -160,14 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6e733cc95fa6bdc",
+  "active": "55fb322f678a91b3",
   "lastOpenFiles": [
+    "tools/curl.md~",
+    "exploits/OWASP/SQL_Injection.md~",
+    "tools/curl.md",
+    "exploits/OWASP/SQL_Injection.md",
+    "exploits/OWASP/1705823331-DJAF.md",
+    "tools/burpsuite.md",
+    "Certifications/PJPT/Active_Directory.md",
     "Certifications/PJPT/Active_Directory.md~",
     "THM/boxes/medium/Watcher/recon.md",
     "THM/boxes/medium/Watcher/recon.md~",
     "THM/boxes/medium/Watcher/creds.txt~",
     "THM/boxes/medium/Watcher/creds.txt",
-    "Certifications/PJPT/Active_Directory.md",
     "Welcome.md",
     "exploits/OWASP",
     "exploits",
@@ -175,7 +167,6 @@
     "Certifications",
     "tools/hydra.md~",
     "tools/hydra.md",
-    "tools",
     "create a link.md"
   ]
 }
