@@ -12,6 +12,8 @@ tags: []
 #### POST
 `$ curl -X POST [website/IP:<port>]`
 
+#### FILE UPLOAD
+`$ curl --user “[user]:[pass]” [IP] --upload-file [file]`
 
 ### Options
 - `-A "[user-agent]"`: set user-agent
